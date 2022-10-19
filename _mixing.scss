@@ -1,0 +1,31 @@
+@mixin redius($value) {
+    border: solid 1px  $white;
+    border-radius: $value;
+    -webkit-border-radius: $value;
+}
+
+@mixin  smoth() {
+    transition: all ease-in 0.5s;
+    overflow: hidden;
+}
+
+@mixin  active() {
+    transition: all ease-in 0.5s;
+    color: $hover-color;
+}
+
+@mixin border($value) {
+    border: solid 1px $value;
+    outline: solid 1px $primary-color;
+    outline-offset: -20px;
+    padding: 40px;
+}
+
+@mixin redus() {
+    border-radius: 5px;
+       overflow: hidden;
+    
+}
+
+
+

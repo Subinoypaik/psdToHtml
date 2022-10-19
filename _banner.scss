@@ -1,0 +1,99 @@
+.banner{
+
+  background-image: linear-gradient(180deg, #3b39390d, #71717105), url(../../images/background.png);
+  background-position: center 31%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @include tablet{
+    background-position: center top;
+    background-size: cover;
+  }
+  @include desktop-small{
+    background-position: center 40%;
+  }
+  .imgpart{
+    margin-top: 40px;
+    img{
+      width: 100%;
+      @include tablet{
+        width: 100%;
+      }
+    }
+    .content{
+      padding-top: 120px;
+      @include desktop-small{
+        padding-top: 74px;
+      }
+      h1{
+       font-size: 43px;
+      margin-bottom: 20px;
+      letter-spacing: 7px;
+      @include desktop-small{
+        font-size: 37px;
+      }
+      @include tablet{
+        color: $white;
+        font-size: 35px;
+      }
+        span{
+          color: $primary-color;
+        }
+      }
+      p{
+        @include tablet{
+          color: $white;
+        }
+      }
+      .button-part{
+        margin-bottom: 30px;
+        .quick-link{
+          width: auto;
+          padding: 13px 36px;
+          font-size: 14px;
+          font-weight: 600;
+          letter-spacing: 2px;
+          text-align: center;
+          display: block;
+          @include desktop-small{
+            padding: 13px 21px;
+          }
+          @include tablet{
+            padding: 13px 23px;
+          }
+          
+          &.newlink{
+            background: #010358;
+            margin-left: 10px;
+          }
+        }
+      }
+      
+    }
+   
+  }
+}
+
+.indecater{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include tablet{margin-top: 8px;}
+  .carousel-control-prev{
+    left: 0;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: solid 2px  $white;
+    border-radius: 50%;
+  }
+  .carousel-control-next{
+    position: relative;
+    width: 50px;
+    left: 15px;
+    height: 50px;
+    border: solid 2px $white;
+    border-radius: 50%;
+  }
+}
+
